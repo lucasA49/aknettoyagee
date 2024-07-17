@@ -1,9 +1,11 @@
+import "../styles/Accueil.css";
+
 function Accueil() {
-    return (
-     <>
-     </>
-    );
-  }
-  
-  export default Accueil;
-  
+  return (
+    <div className="banniere-icone">
+      <p>oui</p>
+    </div>
+  );
+}
+
+export default Accueil;
