@@ -1,121 +1,33 @@
-/* .blanc-header {
-  display: flex;
-  width: 100%;
-  height: 108px;
-}
-
-.logo {
-  width: 100px;
-  padding-top: 1rem;
-  height: 83px;
-  margin-left: 2rem;
-}
-
-.numero-tel {
-  float: right;
-  height: 20px;
-  width: 129px;
-  font-size: 24px;
-}
-
-.bouton-header {
-  height: 80px;
-  text-decoration: none;
-  border-radius: 2px;
-  font-size: 18px;
-  box-sizing: 20px;
-}
-
-.bandeau-gris {
-    display: flex;
-  height: 4.8rem;
-  margin-top: 8.8%;
-  background-color: #525252;
-}
-
-.Lavage-intérieur-header {
-  color: white;
-}
-
-.lavage-extérieur-header {
-  color: white;
-}
-
-.nettoyage-mobilier-header {
-  color: white;
-}
-
-.background-header {
-  display: flex;
-  width: 100%;
-  height: 423px;
-  margin-top: 11.6rem;
-  margin-left: 25rem;
-}
-
-.image-background {
-  margin-top: 11.7rem;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 423px;
-}
-.blue-header {
-  display: flex;
-  width: 100%;
-  height: 4rem;
-  background-color: #00a3ff;
-  margin-top: 34.2rem;
-  left: 0;
-  position: absolute;
-  opacity: 40%;
-} 
-
-.lav-blue {
-  color: white;
-  position: absolute;
-  margin-top: 35.5rem;
-  margin-left: 5rem;
-}
-.ext-blue {
-  color: white;
-  position: absolute;
-  margin-top: 35.5rem;
-  margin-left: 25rem;
-}
-
-.mobilier-blue {
-  color: white;
-  position: absolute;
-  margin-top: 35.5rem;
-  margin-left: 47rem;
-} */
-
-/* Partie de Nicolas */
-
-.image-background {
-  width: 100vw;
-}
-
 header {
-  & .logo {
-    padding: 1rem;
-  }
-
   & #top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    & .logo {
+      padding: 1rem;
+    }
+
     & #contact-nav {
       display: flex;
-      gap: 6rem;
-      text-decoration: none;
+      align-items: center;
+      gap: 4rem;
+      padding: 0 2rem 0 0;
+
+      & > img {
+        height: 80px;
+      }
 
       & .numero-tel {
         font-size: 20px;
-        align-items: center;
-        justify-content: space-between;
+      }
+
+      & > a {
+        text-decoration: none;
+        background-color: grey;
+        border-radius: 1rem;
+        padding: 0.8rem 1.2rem;
+        color: white;
       }
     }
   }
@@ -137,41 +49,39 @@ header {
 
   #banner-image {
     position: relative;
+    height: 500px;
+
+    & > img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
 
     & .blue-banner {
-      display: flex;
       position: absolute;
       bottom: 0;
-      background-color: #00a3ff;
-      opacity: 40%;
+      height: 100px;
       width: 100%;
+      background-color: #00a3ff;
+      opacity: 0.4;
     }
 
     & hgroup {
-      display: flex;
       position: absolute;
-      bottom: 0;
-      justify-content: center;
+      display: flex;
       align-items: center;
+      height: 100px;
+      bottom: 0;
       gap: 4rem;
-      color: white;
-      padding-left: 27rem;
+      left: 50%;
+      transform: translateX(-50%);
 
       & h3 {
         font-size: 24px;
+        color: white;
+        width: 20vw;
+        text-align: center;
       }
     }
-  }
-}
-.bouton-header {
-  height: 50px;
-  width: 165px;
-  text-decoration: none;
-  border-radius: 25px;
-
-  background-color: #d9d9d9;
-
-  & p {
-    font-size: 18px;
   }
 }
