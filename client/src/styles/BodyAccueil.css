@@ -1,6 +1,6 @@
 .contenaire-body {
   display: flex;
-  height: 90vh;
+  height: 42vh;
   justify-content: center;
   text-align: center;
   right: 20%;
@@ -16,7 +16,8 @@
 }
 
 .titre-image-container {
-  margin-top: 30px;
+  top: 2rem;
+  height: 3rem;
 }
 
 .titre-body {
@@ -28,4 +29,26 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+/* présentation en dessous des images */
+.contenaire-presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.titre-prestations {
+  font-size: 1.5rem;
+  width: 44rem;
+  height: 1.5rem;
+  /* bottom: 20rem; */
+}
+
+.img-texte-accueil {
+  position: relative;
+  /* height: 30rem; */
+  width: 25vw;
+  right: 1rem;
 }
