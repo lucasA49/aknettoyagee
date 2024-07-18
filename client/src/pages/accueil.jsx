@@ -1,10 +1,15 @@
 import "../styles/Accueil.css";
+import Header from "../components/Header";
+import Engagement from "../components/Engagement";
+import Footer from "../components/Footer";
 
 function Accueil() {
   return (
-    <div className="banniere-icone">
-      <p>oui</p>
-    </div>
+    <>
+      <Header />
+      <Engagement />
+      <Footer />
+    </>
   );
 }
 

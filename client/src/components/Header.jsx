@@ -15,7 +15,6 @@ function Header() {
           <p className="numero-tel">0756936273</p>
           <NavLink to="/">CONTACTEZ NOUS</NavLink>
         </div>
-
       </nav>
 
       {/* EN ATTENTE DE ROOT POUR LE BOUTON !! */}

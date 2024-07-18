@@ -16,10 +16,13 @@ header {
 
       & > img {
         height: 80px;
+        font-size: 25px;
       }
 
       & .numero-tel {
-        font-size: 20px;
+        font-size: 24px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       & > a {
