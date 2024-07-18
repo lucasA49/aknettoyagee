@@ -1,12 +1,5 @@
-create table user (
-  id int unsigned primary key auto_increment not null,
-  email varchar(255) not null unique,
-  password varchar(255) not null
-);
-
-create table item (
-  id int unsigned primary key auto_increment not null,
-  title varchar(255) not null,
-  user_id int unsigned not null,
-  foreign key(user_id) references user(id)
+-- Active: 1720709219129@@127.0.0.1@3306@dbaknettoyage
+CREATE TABLE home_info (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  paragraph TEXT NOT NULL
 );
