@@ -1,17 +1,14 @@
-// import React, { useState } from 'react';
 // import '../styles/BodyAdmin.css';
 
-// const BodyAdmin = () => {
+// function BodyAdmin() {
 //   const [isLogin, setIsLogin] = useState(true); 
 //   const [username, setUsername] = useState('');
 //   const [password, setPassword] = useState('');
-//   const [error ] = useState('');
+//   const [error] = useState(''); // Ajout de setError pour utiliser cette variable
 
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
-   
-
-
+//     // Ajoutez votre logique de soumission ici
 //   };
 
 //   return (
@@ -44,15 +41,16 @@
 //           <div className="alternatif">
 //             <p className='texte-alternatif'>
 //               {isLogin ? "Tu n'as pas de compte ?" : 'Tu as un compte ?'}
-//               {/* <button onClick={() => setIsLogin(!isLogin)}> */}
+//               <button type="button" onClick={() => setIsLogin(!isLogin)}>
 //                 {isLogin ? 'Inscription' : 'Connexion'}
-//               <button/>
+//               </button>
 //             </p>
 //           </div>
 //         </form>
 //       </div>
 //     </div>
 //   );
-// };
+// }
 
 // export default BodyAdmin;
+

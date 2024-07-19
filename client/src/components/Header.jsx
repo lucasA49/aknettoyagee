@@ -13,7 +13,7 @@ function Header() {
         <div id="contact-nav">
           <img src={tel} alt="" />
           <p className="numero-tel">0756936273</p>
-          <NavLink to="/">CONTACTEZ NOUS</NavLink>
+          <NavLink to="/Contact">CONTACTEZ NOUS</NavLink>
         </div>
       </nav>
 
