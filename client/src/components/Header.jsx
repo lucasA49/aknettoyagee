@@ -8,8 +8,9 @@ function Header() {
   return (
     <header>
       <nav id="top-nav">
+        <NavLink to="/"> 
         <img className="logo" src={logo} alt="" />
-
+        </NavLink>
         <div id="contact-nav">
           <img src={tel} alt="" />
           <p className="numero-tel">0756936273</p>
@@ -19,9 +20,9 @@ function Header() {
 
       {/* EN ATTENTE DE ROOT POUR LE BOUTON !! */}
       <nav id="banner">
-        <NavLink>Lavage Intérieur</NavLink>
-        <NavLink>Lavage Extérieur </NavLink>
-        <NavLink>Nettoyage de Mobilier textille</NavLink>
+        <NavLink to="nettoyagevéhiculeintérieur">Lavage Intérieur</NavLink>
+        <NavLink to="nettoyagevéhiculeextérieur">Lavage Extérieur </NavLink>
+        <NavLink to="nettoyagemobiliertextile">Nettoyage de Mobilier textille</NavLink>
       </nav>
 
       <section id="banner-image">
