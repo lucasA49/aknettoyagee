@@ -1,14 +1,14 @@
 .contenaire-body {
   display: flex;
-  height: 75vh;
+  height: 80h;
   justify-content: center;
   text-align: center;
   right: 20%;
+
   img {
     height: 30rem;
     width: 25vw;
     justify-content: center;
-    /* object-fit: cover; */
     margin: auto;
     gap: 1rem;
     border-radius: 25px;
@@ -17,12 +17,11 @@
 
 .titre-image-container {
   top: 2rem;
-  height: 3rem;
 }
 
 .titre-body {
   font-size: 1.25rem;
-  height: 6rem;
+  height: 3rem;
 }
 
 .image-body-container {
@@ -30,29 +29,52 @@
   align-items: center;
   gap: 15px;
 }
+
 /* présentation en dessous des images */
-.contenaire-presentation {
+.contenaire-titre-pres {
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
 }
+
 .titre-prestations {
   display: flex;
-  width: 44rem;
+
   height: 1.5rem;
-  right: 50%;
   font-size: 1.5rem;
-  transform: translateX(50%);
 }
+
+.contenaire-presentation {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  height: 70vh;
+  width: 100%;
+}
+
 .p-prestation {
-  font-size: 2rem;
-  height: 5rem;
+  font-size: 3rem;
 }
 
 .img-texte-accueil {
-  left: 10%;
-  transform: translateX(06%);
-  top: 50%;
-  transform: translateY(0%);
-  width: 27vw;
-  right: 1rem;
+  height: 47vh;
+  width: 34vw;
+  right: 2%;
+}
+
+.nosservices {
+  display: flex;
+}
+
+.liste-nonordonée-services {
+  display: flex;
+  right: 61%;
+  top: 40%;
+}
+
+.p-listeervices {
+  display: flex;
+  right: 32%;
+  top: 40%;
 }

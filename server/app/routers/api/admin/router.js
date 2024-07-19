@@ -1,23 +1,12 @@
-const express = require("express");
+// // server/routes/adminRoutes.js
+// const express = require('express');
+// const { registerAdmin, loginAdmin } = require('../controllers/UserActions');
+// const router = express.Router();
 
-const router = express.Router();
+// // Route for registering a new admin
+// router.post('/api/register', registerAdmin);
 
-/* ************************************************************************* */
-// Define Your API Routes Here
-/* ************************************************************************* */
+// // Route for logging in the admin
+// router.post('/login', loginAdmin);
 
-// Import item-related actions
-const { browse, read, add } = require("../../../controllers/AdminActions");
-
-// Route to get a list of items
-router.get("/", browse);
-
-// Route to get a specific item by ID
-router.get("/:id", read);
-
-// Route to add a new item
-router.post("/", add);
-
-/* ************************************************************************* */
-
-module.exports = router;
+// module.exports = router;

@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Accueil from "./pages/accueil";
-
+import Admin from "./pages/Admin"
 import "./styles/globals.css";
 
 const router = createBrowserRouter([
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <Accueil />,  
       },
       {
-        path: "/admin",
-        element: < Accueil/>,  
+        path: "admin",
+        element: < Admin/>,  
       },
       ]);
 

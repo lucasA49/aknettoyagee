@@ -4,9 +4,11 @@
   height: 130px;
   background-color: #d9d9d9;
   justify-content: space-evenly;
+
   p {
     font-size: 1rem;
   }
+
   h4,
   h5 {
     font-size: 1.2rem;
@@ -39,7 +41,13 @@
 
 .logo-text-container {
   display: flex;
+
+  & img {
+    height: 6rem;
+    width: 6rem;
+  }
 }
+
 .text-engagement-container {
   display: flex;
   flex-direction: column;

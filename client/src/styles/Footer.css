@@ -44,3 +44,6 @@ footer {
   text-align: flex-end;
   font-size: 20px;
 }
+.logo-reseaux {
+  display: flex;
+}

@@ -13,9 +13,11 @@ function Footer() {
         <p className="p-footer">
           N'hésitez surtout pas à nous contacter au <strong>0756936273</strong>
         </p>
-        <p className="p2-footer">ou par nos reseaux </p>
+        <p className="p2-footer">ou sur nos reseaux </p>
+        <div className="logo-reseaux">
         <img className="facebook" src={facebook} alt="" />
         <img className="insta" src={insta} alt="" />{" "}
+      </div>
       </footer>
       <article className="footer-blanc">
         <div className="footer-info">
