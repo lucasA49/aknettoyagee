@@ -1,7 +1,7 @@
 // import '../styles/BodyAdmin.css';
 
 // function BodyAdmin() {
-//   const [isLogin, setIsLogin] = useState(true); 
+//   const [isLogin, setIsLogin] = useState(true);
 //   const [username, setUsername] = useState('');
 //   const [password, setPassword] = useState('');
 //   const [error] = useState(''); // Ajout de setError pour utiliser cette variable
@@ -53,4 +53,3 @@
 // }
 
 // export default BodyAdmin;
-

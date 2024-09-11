@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "../styles/BodyContact.css"; 
-// eslint-disable-next-line import/no-extraneous-dependencies
+import "../styles/BodyContact.css";
 import emailjs from "@emailjs/browser";
 
 function BodyContact() {
@@ -36,81 +35,90 @@ function BodyContact() {
 
   const sendFeedback = (serviceId, templateId, variables) => {
     emailjs
-      .send(serviceId, templateId, variables, 'LniQmCfChS_KX6zQX') 
+      .send(serviceId, templateId, variables, "LniQmCfChS_KX6zQX")
       .then(() => {
-        setNotification("Votre demande a bien été envoyée et nous vous répondrons dans les meilleurs délais.");
+        setNotification(
+          "Votre demande a bien été envoyée et nous vous répondrons dans les meilleurs délais."
+        );
         setTimeout(() => setNotification(""), 5000); // Masquer la notification après 5 secondes
       })
       .catch(() => {
-        setNotification("Échec de l'envoi de votre demande. Veuillez réessayer.");
+        setNotification(
+          "Échec de l'envoi de votre demande. Veuillez réessayer."
+        );
         setTimeout(() => setNotification(""), 5000); // Masquer la notification après 5 secondes
       });
   };
 
   return (
-    <div className="body-contact">
-      <div className="container-contact">
-        <h2>Contactez-nous</h2>
-        {notification && <div className="notification">{notification}</div>}
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="firstName">Prénom</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="lastName">Nom</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="phone">Numéro de téléphone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Adresse e-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit">Envoyer</button>
-        </form>
+    <>
+      <div className="head-contact">
+        <p>oui</p>
       </div>
-    </div>
+      <div className="body-contact">
+        <div className="container-contact">
+          <h2>Contactez-nous</h2>
+          {notification && <div className="notification">{notification}</div>}
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="firstName">Prénom</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Nom</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="phone">Numéro de téléphone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
 

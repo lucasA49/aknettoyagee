@@ -4,11 +4,11 @@ import BodyContact from "../components/BodyContact";
 
 function Contact() {
   return (
-      <>
-          <Header />
-          <BodyContact/>
-          <Footer />
-      </>
+    <>
+      <Header />
+      <BodyContact />
+      <Footer />
+    </>
   );
 }
 export default Contact;

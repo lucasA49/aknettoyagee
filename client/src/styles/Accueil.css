@@ -19,22 +19,22 @@
 .text-engagement-container {
   display: flex;
   flex-direction: column;
+  margin-left: 0.5rem;
 }
 
 .imgbio {
-  display: flex;
   position: relative;
+  top: 0.5rem;
+  display: flex;
   height: 6rem;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .p-bio {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .imgmateriel {
+  position: relative;
   height: 6rem;
   width: 6rem;
 }
@@ -45,6 +45,8 @@
   & img {
     height: 6rem;
     width: 6rem;
+    position: relative;
+    top: 1rem;
   }
 }
 

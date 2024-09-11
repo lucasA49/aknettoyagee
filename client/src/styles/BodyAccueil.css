@@ -32,15 +32,12 @@
 
 /* présentation en dessous des images */
 .contenaire-titre-pres {
-  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .titre-prestations {
-  display: flex;
-
   height: 1.5rem;
   font-size: 1.5rem;
 }
@@ -49,32 +46,39 @@
   display: flex;
   justify-content: flex-start;
   justify-items: flex-start;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
 }
 
-.p-prestation {
-  font-size: 3rem;
+.p-presentation {
+  position: relative;
+  height: 12rem;
+  width: 70vw;
+  justify-content: center;
+  margin-left: 4rem;
+  font-size: 1.2rem;
 }
 
 .img-texte-accueil {
+  position: relative;
   height: 47vh;
   width: 34vw;
   right: 2%;
+  border-radius: 25px;
+  left: 1.5rem;
 }
 
 .nosservices {
-  display: flex;
+  position: relative;
+  top: 14rem;
+  height: 2rem;
+  right: 28%;
+  font-size: 1rem;
 }
 
 .liste-nonordonée-services {
-  display: flex;
-  right: 61%;
-  top: 40%;
-}
-
-.p-listeervices {
-  display: flex;
-  right: 32%;
-  top: 40%;
+  position: relative;
+  right: 60%;
+  top: 35%;
+  font-size: 1rem;
 }

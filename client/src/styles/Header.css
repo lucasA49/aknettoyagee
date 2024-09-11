@@ -21,8 +21,8 @@ header {
 
       & .numero-tel {
         font-size: 24px;
-        left: 50%;
-        transform: translateX(-50%);
+        /* left: 40%; */
+        transform: translateX(-40%);
       }
 
       & > a {
@@ -46,7 +46,7 @@ header {
     & a {
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 1.2rem;
     }
   }
 
@@ -73,14 +73,14 @@ header {
       position: absolute;
       display: flex;
       align-items: center;
-      height: 100px;
+      height: 6.25rem;
       bottom: 0;
-      gap: 4rem;
+      gap: 9rem;
       left: 50%;
       transform: translateX(-50%);
 
       & h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: white;
         width: 20vw;
         text-align: center;

@@ -8,12 +8,15 @@ function Header() {
   return (
     <header>
       <nav id="top-nav">
-        <NavLink to="/"> 
-        <img className="logo" src={logo} alt="" />
+        <NavLink to="/">
+          <img className="logo" src={logo} alt="" />
         </NavLink>
         <div id="contact-nav">
           <img src={tel} alt="" />
-          <p className="numero-tel">0756936273</p>
+          <a className="numero-tel" href="tel:0756936273">
+            0756936273
+          </a>
+
           <NavLink to="/Contact">CONTACTEZ NOUS</NavLink>
         </div>
       </nav>
@@ -22,7 +25,9 @@ function Header() {
       <nav id="banner">
         <NavLink to="nettoyagevéhiculeintérieur">Lavage Intérieur</NavLink>
         <NavLink to="nettoyagevéhiculeextérieur">Lavage Extérieur </NavLink>
-        <NavLink to="nettoyagemobiliertextile">Nettoyage de Mobilier textille</NavLink>
+        <NavLink to="nettoyagemobiliertextile">
+          Nettoyage de Mobilier textille
+        </NavLink>
       </nav>
 
       <section id="banner-image">

@@ -16,13 +16,13 @@ function Footer() {
         </p>
         <p className="p2-footer">ou sur nos reseaux </p>
         <div className="logo-reseaux">
-       <NavLink to="https://www.facebook.com/profile.php?id=100089310301010">
-        <img className="facebook" src={facebook} alt="" />
-        </NavLink>
-        <NavLink to="https://www.instagram.com/ak.nettoyage?igsh=MWN2ZDF2bmNzam96Yw%3D%3D&utm_source=qr"> 
-        <img className="insta" src={insta} alt="" />{" "}
-        </NavLink>
-      </div>
+          <NavLink to="https://www.facebook.com/profile.php?id=100089310301010">
+            <img className="facebook" src={facebook} alt="" />
+          </NavLink>
+          <NavLink to="https://www.instagram.com/ak.nettoyage?igsh=MWN2ZDF2bmNzam96Yw%3D%3D&utm_source=qr">
+            <img className="insta" src={insta} alt="" />{" "}
+          </NavLink>
+        </div>
       </footer>
       <article className="footer-blanc">
         <div className="footer-info">

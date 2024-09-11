@@ -10,29 +10,28 @@ import Interieur from "./pages/Interieur";
 import Mobilier from "./pages/Mobilier";
 
 const router = createBrowserRouter([
- 
-    {
-        path: "/",
-        element: <Accueil />,  
-      },
-   
-      {
-        path: "contact",
-        element: < Contact/>,  
-      },
-      {
-        path: "nettoyagevéhiculeextérieur",
-        element: <Extérieur/>,  
-      },
-      {
-        path: "nettoyagevéhiculeintérieur",
-        element: < Interieur/>,  
-      },
-      {
-        path: "nettoyagemobiliertextile",
-        element: < Mobilier/>,  
-      },
-      ]);
+  {
+    path: "/",
+    element: <Accueil />,
+  },
+
+  {
+    path: "contact",
+    element: <Contact />,
+  },
+  {
+    path: "nettoyagevéhiculeextérieur",
+    element: <Extérieur />,
+  },
+  {
+    path: "nettoyagevéhiculeintérieur",
+    element: <Interieur />,
+  },
+  {
+    path: "nettoyagemobiliertextile",
+    element: <Mobilier />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

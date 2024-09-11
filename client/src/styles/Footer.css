@@ -22,11 +22,13 @@ footer {
     height: 10px;
     color: white;
     height: 10px;
+    font-size: 1rem;
   }
 
   .p2-footer {
     font-size: 20px;
     height: 10px;
+    font-size: 1rem;
   }
 }
 .insta,
@@ -43,6 +45,7 @@ footer {
   justify-content: space-between;
   text-align: flex-end;
   font-size: 20px;
+  font-size: 1.1rem;
 }
 .logo-reseaux {
   display: flex;
